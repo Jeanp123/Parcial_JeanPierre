@@ -29,17 +29,16 @@ class Team : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentTeamBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         var arrSO = arrayOf("Arg", "Bra", "Uru",
             "Colo", "Estados", "Peru", "Trinidad")
-        val lsvSistemasOperativos: ListView = binding.lvTeams
+       val lsvSistemasOperativos: ListView = binding.lvTeams
         //val adaptador: Any? = ArrayAdapter<Any?>(this, android.R.layout.simple_list_item_1, arrSO)
 
         //lsvSistemasOperativos.adapter = adaptador as ListAdapter?
 
-        lsvSistemasOperativos.setOnItemClickListener { parent, view, position, id ->
+       // lsvSistemasOperativos.setOnItemClickListener { parent, view, position, id ->
             //Toast.makeText(applicationContext, "posicion: $position ", Toast.LENGTH_LONG).show()
-        }
+        //}
 
         return root
 

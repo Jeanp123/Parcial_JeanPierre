@@ -43,17 +43,3 @@ class LogInActivity : AppCompatActivity() {
         }
     }
 }
-
-//<RelativeLayout
-//android:id="@+id/splash_layout"
-//android:layout_width="match_parent"
-//android:layout_height="match_parent"
-//tools:layout_editor_absoluteX="174dp"
-//tools:layout_editor_absoluteY="0dp">
-
-//<ImageView
-//android:id="@+id/logo"
-//android:layout_width="wrap_content"
-//android:layout_height="wrap_content"
-//android:layout_centerInParent="true" />
-//</RelativeLayout>
