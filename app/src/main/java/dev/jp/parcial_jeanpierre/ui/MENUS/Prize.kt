@@ -26,19 +26,38 @@ class Prize : Fragment() {
         val root: View = binding.root
         val nav = findNavController()
 
-        binding.btnPrize.setOnClickListener {
-            nav.navigate(R.id.navigation_Prize)
+        binding.btnCalculate.setOnClickListener {
+            val monto1 = calcprimero(binding.txtprecio.text.toString().toDouble())
+            val monto2 =  calcsegundo(binding.txtprecio.text.toString().toDouble())
+            val monto3 =  calctercero(binding.txtprecio.text.toString().toDouble())
+            val sumamonto = monto1 + monto2 + monto3
+            val monto4 =  calccuarto(binding.txtprecio.text.toString().toDouble(),sumamonto)
+            binding.tv1P.text = monto1.toString()
+            binding.tv1P.text = monto2.toString()
+            binding.tv1P.text = monto3.toString()
+            binding.tv1P.text = monto4.toString()
+
         }
-        binding.btnTeam.setOnClickListener { nav.navigate(R.id.navigation_Teams) }
-        binding.btnStadiu.setOnClickListener {  nav.navigate(R.id.navigation_Stadiums)}
-        binding.btn.setOnClickListener {
-            val intent = Intent(requireContext(),LogInActivity::class.java)
+
+        binding.btnGoBack.setOnClickListener {
+            val intent = Intent(requireContext(),Menu::class.java)
             startActivity(intent)
         }
         return root
 
     }
-
+    private fun calcprimero(precio:Double):Double{
+        return precio * 0.25
+    }
+    private fun calcsegundo(precio:Double):Double{
+        return precio * 0.15
+    }
+    private fun calctercero(precio:Double):Double{
+        return precio * 0.10
+    }
+    private fun calccuarto(precio:Double, suma:Double):Double{
+        return precio * ((suma)/13)
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
