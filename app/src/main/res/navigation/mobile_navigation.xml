@@ -6,22 +6,22 @@
     app:startDestination="@id/menuFragment">
     <fragment
         android:id="@+id/menuFragment"
-        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.MenuFragment"
+        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.Menu"
         android:label="@string/title_Menu"
         tools:layout="@layout/fragment_menu" />
     <fragment
         android:id="@+id/prizeFragment"
-        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.PrizeFragment"
+        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.Prize"
         android:label="@string/title_Prize"
         tools:layout="@layout/fragment_prize" />
     <fragment
         android:id="@+id/stadiumsFragment"
-        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.StadiumsFragment"
+        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.Stadiums"
         android:label="@string/title_Stadiums"
         tools:layout="@layout/fragment_stadiums" />
     <fragment
         android:id="@+id/teamFragment"
-        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.TeamFragment"
+        android:name="dev.jp.parcial_jeanpierre.ui.MENUS.Team"
         android:label="@string/title_Teams"
         tools:layout="@layout/fragment_team" />
 </navigation>

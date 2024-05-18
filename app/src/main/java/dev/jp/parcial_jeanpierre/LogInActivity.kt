@@ -24,35 +24,25 @@ class LogInActivity : AppCompatActivity() {
             insets
         }
 
-        //val loginLayout = findViewById<View>(R.id.main)
-        //loginLayout.visibility = View.GONE
+        val user : EditText = findViewById(R.id.user)
+        val password : EditText = findViewById(R.id.password)
+        val btnIngresar : Button = findViewById(R.id.btnIngresar)
 
-        // Mostrar la splash screen durante 3 segundos
-        //android.os.Handler().postDelayed({
-            // Ocultar la splash screen y mostrar la vista de login
-        //    val splashLayout = findViewById<View>(R.id.splash_layout)
-        //    splashLayout.visibility = View.GONE
-        //    loginLayout.visibility = View.VISIBLE
-        //}, 3000)
+        btnIngresar.setOnClickListener {
+            val user : String = user.text.toString()
 
-        //val user : EditText = findViewById(R.id.user)
-        //val password : EditText = findViewById(R.id.password)
-        //val btnIngresar : Button = findViewById(R.id.btnIngresar)
+            val password : String = password.text.toString()
 
-        //btnIngresar.setOnClickListener {
-         //   val user : String = user.text.toString()
-        //    val password : String = password.text.toString()
-
-        //    if (user == "123" && password == "123"){
-        //        val intent = Intent(this, MainActivity::class.java)
-         //       startActivity(intent)
-        //    }
-        //    Toast.makeText(this
-        //        ,"Credenciales invalidas"
-        //        , Toast.LENGTH_LONG).show()
+            if (user == "123" && password == "123"){
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+            Toast.makeText(this
+                ,"Credenciales invalidas"
+                , Toast.LENGTH_LONG).show()
         }
     }
-//}
+}
 
 //<RelativeLayout
 //android:id="@+id/splash_layout"
