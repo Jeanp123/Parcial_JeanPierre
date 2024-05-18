@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Parcial_JeanPierre</string>
+    <string name="title_Menu">Menu</string>
+    <string name="title_Prize">Prize</string>
+    <string name="title_Teams">Teams</string>
+    <string name="title_Stadiums">Stadiums</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
