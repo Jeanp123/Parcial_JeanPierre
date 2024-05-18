@@ -4,6 +4,7 @@
     <string name="title_Prize">Prize</string>
     <string name="title_Teams">Teams</string>
     <string name="title_Stadiums">Stadiums</string>
+    <string name="Regresarbtn">Go To Menu</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_splash">SplashActivity</string>
